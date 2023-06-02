@@ -57,8 +57,8 @@ jobs:
 
     - name: Setup NuGet.exe
       uses: NuGet/setup-nuget@v1.2.0
-    - name: restore-nuget-packages 
-      uses: IT-Service/restore-nuget-packages@v1.0.2
+    - name: Restore nuget packages
+      run: nuget restore ./DotNetAppSqlDb.sln
     # Autobuild attempts to build any compiled languages  (C/C++, C#, Go, or Java).
     # If this step fails, then you should remove it and run the build manually (see below)
     - name: Autobuild
